@@ -2,7 +2,7 @@
 imports log4net
 
 Public Class Form1
-Dim log As log4net.ILog
+  Dim logger As log4net.ILog
 Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 log = log4net.LogManager.GetLogger("MyApp")
 log4net.Config.XmlConfigurator.Configure()
