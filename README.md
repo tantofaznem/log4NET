@@ -87,3 +87,5 @@ private static ILog logger = LogManager.GetLogger("FileAppender");
 2 Logger.LogError
 3 Logger.LogFatal
 ```
+
+6. See the Example.vb file
