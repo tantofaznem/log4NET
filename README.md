@@ -20,7 +20,7 @@ How to use Log4Net for VB.net or C#.net
             <appender-ref ref=" FileAppender " />
         </logger>
         <appender name=" FileAppender " type="log4net.Appender.RollingFileAppender">
-            <file value="[Your directory and file name where you want to store log like ‘C:/Temp/app.log’]" />
+            <file value="C:/Myapp.log" />
             <appendToFile value="true" />
             <rollingStyle value="Composite" />
             <datePattern value="yyyyMMdd" />
@@ -86,6 +86,8 @@ private static ILog logger = LogManager.GetLogger("FileAppender");
 1 Logger.LogInfo
 2 Logger.LogError
 3 Logger.LogFatal
+4 Logger.LogDebug
+5 Logger.LogWarn
 ```
 
 6. See the Example.vb file
